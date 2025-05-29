@@ -1,17 +1,23 @@
-"use client"
-import Header from "../../organisms/Header/Header"
-import HeroSection from "../../organisms/HeroSection/HeroSection"
-import ServicesSection from "../../organisms/ServicesSection/ServicesSection"
+"use client";
+import Header from "../../organisms/Header/Header";
+import HeroSection from "../../organisms/HeroSection/HeroSection";
+import ServicesSection from "../../organisms/ServicesSection/ServicesSection";
 
 interface LandingTemplateProps {
-  onNavigateToLogin: () => void
-  onNavigateToRegister: () => void
+  onNavigateToLogin: () => void;
+  onNavigateToRegister: () => void;
 }
 
-export default function LandingTemplate({ onNavigateToLogin, onNavigateToRegister }: LandingTemplateProps) {
+export default function LandingTemplate({
+  onNavigateToLogin,
+  onNavigateToRegister,
+}: LandingTemplateProps) {
   return (
     <div className="min-h-screen bg-primary-light">
-      <Header onLoginClick={onNavigateToLogin} onRegisterClick={onNavigateToRegister} />
+      <Header
+        onLoginClick={onNavigateToLogin}
+        onRegisterClick={onNavigateToRegister}
+      />
       <HeroSection onGetStarted={onNavigateToRegister} />
       <ServicesSection />
 
@@ -24,8 +30,9 @@ export default function LandingTemplate({ onNavigateToLogin, onNavigateToRegiste
                 Más de 10 años cuidando mascotas
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                En VetLife, entendemos que tu mascota es parte de tu familia. Por eso, nos dedicamos a brindar atención
-                veterinaria de la más alta calidad con el amor y cuidado que merecen.
+                En VetLife, entendemos que tu mascota es parte de tu familia.
+                Por eso, nos dedicamos a brindar atención veterinaria de la más
+                alta calidad con el amor y cuidado que merecen.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
@@ -50,7 +57,7 @@ export default function LandingTemplate({ onNavigateToLogin, onNavigateToRegiste
             </div>
             <div>
               <img
-                src="/placeholder.svg?height=400&width=500&text=🐕🐱+Equipo+VetLife+con+mascotas"
+                src="https://i1.wp.com/classeasaude.com.br/wp-content/uploads/2020/02/shutterstock_1479238910.jpg?fit=2121%2C1414&ssl=1"
                 alt="Equipo veterinario VetLife con mascotas adorables"
                 className="rounded-2xl shadow-xl"
               />
@@ -62,10 +69,12 @@ export default function LandingTemplate({ onNavigateToLogin, onNavigateToRegiste
       {/* Contact Section */}
       <section id="contacto" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-6">¿Listo para cuidar a tu mascota?</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-6">
+            ¿Listo para cuidar a tu mascota?
+          </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Únete a nuestra familia VetLife y dale a tu mascota el cuidado que merece. Regístrate hoy y agenda tu
-            primera cita.
+            Únete a nuestra familia VetLife y dale a tu mascota el cuidado que
+            merece. Regístrate hoy y agenda tu primera cita.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -95,7 +104,9 @@ export default function LandingTemplate({ onNavigateToLogin, onNavigateToRegiste
                 </div>
                 <span className="text-xl font-bold">VetLife</span>
               </div>
-              <p className="text-gray-300">Cuidando a tus mascotas con amor y profesionalismo desde 2014.</p>
+              <p className="text-gray-300">
+                Cuidando a tus mascotas con amor y profesionalismo desde 2014.
+              </p>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Contacto</h3>
@@ -122,5 +133,5 @@ export default function LandingTemplate({ onNavigateToLogin, onNavigateToRegiste
         </div>
       </footer>
     </div>
-  )
+  );
 }

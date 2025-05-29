@@ -46,7 +46,7 @@ export default function HeroSection({ onGetStarted }: HeroSectionProps) {
           </div>
           <div className="relative">
             <img
-              src="/placeholder.svg?height=500&width=600&text=🐕🐱+Veterinario+cuidando+mascotas"
+              src="https://tse2.mm.bing.net/th/id/OIP.0Wzwzp2PUY93VT4J9IdfLQHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain"
               alt="Veterinario cuidando mascotas adorables"
               className="rounded-2xl shadow-2xl"
             />
